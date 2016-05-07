@@ -35,39 +35,6 @@ chef_gem 'accessibility_core' do
   compile_time false
 end
 
-%w(.bundle .chef .ssh .vim).each do |d|
-  directory File.expand_path("~/#{d}") do
-    action :delete
-    recursive true
-    only_if { File.directory?(File.expand_path("~/#{d}")) }
-  end
-end
-
-%w(.profile .gitconfig .vimrc .vimrc.local).each do |f|
-  file File.expand_path("~/#{f}") do
-    action :delete
-    only_if do
-      path = File.expand_path("~/#{f}")
-      File.exist?(path) && File.ftype(path) != 'link'
-    end
-  end
-end
-
-%w(
-  .bundle
-  .chef
-  .ssh
-  .vim
-  .profile
-  .gitconfig
-  .vimrc
-  .vimrc.local
-).each do |l|
-  link File.expand_path("~/#{l}") do
-    to File.expand_path("~/Dropbox/#{l}")
-  end
-end
-
 execute 'killall Dock' do
   action :nothing
 end
@@ -135,8 +102,6 @@ include_recipe 'mac-app-store'
 include_recipe 'knock'
 include_recipe 'iwork'
 include_recipe 'divvy'
-include_recipe 'microsoft-remote-desktop'
-include_recipe 'tweetbot'
 include_recipe 'fantastical'
 include_recipe 'kindle'
 include_recipe 'airmail'
@@ -146,16 +111,6 @@ include_recipe 'paw'
 # Other Apps #
 ##############
 include_recipe 'dropbox'
-include_recipe 'box-sync'
 include_recipe 'gimp'
 include_recipe 'iterm2'
 include_recipe 'spotify'
-include_recipe 'steam'
-include_recipe 'plex-home-theater'
-include_recipe 'private-internet-access'
-include_recipe 'skype-app'
-include_recipe 'vlc'
-include_recipe 'vmware-fusion'
-include_recipe 'parallels'
-include_recipe 'webhook'
-include_recipe 'x2go-client'
