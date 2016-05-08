@@ -1,12 +1,12 @@
 # Encoding: UTF-8
 
-name             'my-dev-machine'
-maintainer       'Jonathan Hartman'
-maintainer_email 'j@p4nt5.com'
+name             'base-mac-os'
+maintainer       'Brian Oldfield'
+maintainer_email 'brian@oldfield.io'
 license          'apache2'
-description      'Installs/Configures my-dev-machine'
-long_description 'Installs/Configures my-dev-machine'
-version          '0.0.1'
+description      'Installs/Configures base-mac-os'
+long_description 'Installs/Configures base-mac-os'
+version          '0.0.5'
 
 depends          'build-essential', '~> 3.0'
 depends          'chef-client', '~> 4.3'
@@ -37,5 +37,6 @@ depends          'webhook', '~> 0.1'
 depends          'x2go-client', '~> 1.0'
 depends          'airmail', '~> 0.1'
 depends          'paw', '~> 0.1'
+depends          'bash-it-more'
 
 supports         'mac_os_x'

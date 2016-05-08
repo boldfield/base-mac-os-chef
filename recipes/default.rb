@@ -94,18 +94,26 @@ include_recipe 'homebrew'
 #################
 homebrew_package 'ruby'
 homebrew_package 'tig'
+homebrew_package 'todo-txt'
+homebrew_package 'autoconf'
+homebrew_package 'pkg-config'
+homebrew_package 'rbenv'
+homebrew_package 'pyenv'
+homebrew_package 'pyenv-virtualenv'
+homebrew_package 'pyenv-virtualenvwrapper'
+
 
 ##################
 # App Store Apps #
 ##################
 include_recipe 'mac-app-store'
 include_recipe 'knock'
-include_recipe 'iwork'
+#include_recipe 'iwork'
 include_recipe 'divvy'
-include_recipe 'fantastical'
+#include_recipe 'fantastical'
 include_recipe 'kindle'
-include_recipe 'airmail'
-include_recipe 'paw'
+#include_recipe 'airmail'
+#include_recipe 'paw'
 
 ##############
 # Other Apps #
@@ -114,3 +122,4 @@ include_recipe 'dropbox'
 include_recipe 'gimp'
 include_recipe 'iterm2'
 include_recipe 'spotify'
+include_recipe 'bash-it-more'

@@ -18,8 +18,8 @@
 # limitations under the License.
 #
 
-default['chef_client']['config'].tap do |c|
-  c['use_policyfile'] = true
-  c['policy_group'] = 'dev'
-  c['policy_name'] = 'dev-machine'
-end
+#default['chef_client']['config'].tap do |c|
+#  c['use_policyfile'] = true
+#  c['policy_group'] = 'dev'
+#  c['policy_name'] = 'dev-machine'
+#end
