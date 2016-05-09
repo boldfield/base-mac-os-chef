@@ -109,6 +109,7 @@ homebrew_package 'todo-txt'
 ##################
 # App Store Apps #
 ##################
+include_recipe 'app-store-alfred'
 include_recipe 'mac-app-store'
 include_recipe 'knock'
 #include_recipe 'iwork'
