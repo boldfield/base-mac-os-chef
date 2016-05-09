@@ -92,6 +92,7 @@ include_recipe 'homebrew'
 #################
 # Homebrew Apps #
 #################
+homebrew_package 'ack'
 homebrew_package 'autoconf'
 homebrew_package 'lastpass-cli'
 homebrew_package 'pass'
