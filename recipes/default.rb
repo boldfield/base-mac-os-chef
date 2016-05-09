@@ -122,4 +122,9 @@ include_recipe 'dropbox'
 include_recipe 'gimp'
 include_recipe 'iterm2'
 include_recipe 'spotify'
+
+##############
+#    Misc    #
+##############
 include_recipe 'bash-it-more'
+include_recipe 'dotfiles'
