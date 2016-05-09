@@ -121,6 +121,7 @@ include_recipe 'kindle'
 ##############
 # Other Apps #
 ##############
+include_recipe 'chrome'
 include_recipe 'dropbox'
 include_recipe 'gimp'
 include_recipe 'iterm2'
