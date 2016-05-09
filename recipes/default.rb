@@ -92,15 +92,16 @@ include_recipe 'homebrew'
 #################
 # Homebrew Apps #
 #################
-homebrew_package 'ruby'
-homebrew_package 'tig'
-homebrew_package 'todo-txt'
 homebrew_package 'autoconf'
 homebrew_package 'pkg-config'
-homebrew_package 'rbenv'
 homebrew_package 'pyenv'
 homebrew_package 'pyenv-virtualenv'
 homebrew_package 'pyenv-virtualenvwrapper'
+homebrew_package 'rbenv'
+homebrew_package 'ruby'
+homebrew_package 'tree'
+homebrew_package 'tig'
+homebrew_package 'todo-txt'
 
 
 ##################
