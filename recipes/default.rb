@@ -1,9 +1,9 @@
 # Encoding: UTF-8
 #
-# Cookbook Name:: my-dev-machine
+# Cookbook Name:: mac-os-base
 # Recipe:: default
 #
-# Copyright 2015 Jonathan Hartman
+# Copyright 2016 Brian Oldfield
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -134,3 +134,5 @@ include_recipe 'spotify'
 ##############
 include_recipe 'bash-it-more'
 include_recipe 'dotfiles'
+
+include_recipe 'base-mac-os::keymappings'
