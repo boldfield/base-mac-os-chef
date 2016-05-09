@@ -93,6 +93,8 @@ include_recipe 'homebrew'
 # Homebrew Apps #
 #################
 homebrew_package 'autoconf'
+homebrew_package 'lastpass-cli'
+homebrew_package 'pass'
 homebrew_package 'pkg-config'
 homebrew_package 'pyenv'
 homebrew_package 'pyenv-virtualenv'

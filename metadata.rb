@@ -6,7 +6,7 @@ maintainer_email 'brian@oldfield.io'
 license          'apache2'
 description      'Installs/Configures base-mac-os'
 long_description 'Installs/Configures base-mac-os'
-version          '0.0.7'
+version          '0.0.9'
 
 depends          'build-essential', '~> 3.0'
 depends          'chef-client', '~> 4.3'
