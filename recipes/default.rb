@@ -97,6 +97,10 @@ homebrew_package 'autoconf'
 homebrew_package 'lastpass-cli'
 homebrew_package 'pass'
 homebrew_package 'pkg-config'
+
+homebrew_package 'gdbm'
+homebrew_package 'sqlite'
+homebrew_package 'python'
 homebrew_package 'pyenv'
 homebrew_package 'pyenv-virtualenv'
 homebrew_package 'pyenv-virtualenvwrapper'
@@ -105,6 +109,15 @@ homebrew_package 'ruby'
 homebrew_package 'tree'
 homebrew_package 'tig'
 homebrew_package 'todo-txt'
+
+include_recipe 'python::pip'
+python_pip 'virtualenv' do
+  version '15.0.1'
+end
+
+python_pip 'virtualenvwrapper' do
+  version '4.7.1'
+end
 
 
 ##################
