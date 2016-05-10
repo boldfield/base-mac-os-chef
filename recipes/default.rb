@@ -149,3 +149,4 @@ include_recipe 'bash-it-more'
 include_recipe 'dotfiles'
 
 include_recipe 'base-mac-os::keymappings'
+include_recipe 'base-mac-os::virtualbox'

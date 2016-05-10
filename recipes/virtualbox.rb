@@ -1,7 +1,7 @@
 # Encoding: UTF-8
 #
-# Cookbook Name:: base-mac-os
-# Attributes:: default
+# Cookbook Name:: mac-os-base
+# Recipe:: virtualbox
 #
 # Copyright 2016 Brian Oldfield
 #
@@ -17,4 +17,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-default['virtualbox']['url'] = 'http://download.virtualbox.org/virtualbox/5.0.20/VirtualBox-5.0.20-106931-OSX.dmg'
+include_recipe 'virtualbox'
+include_recipe 'vagrant'
+
+vagrant_plugin 'vagrant-omnibus'
+vagrant_plugin 'vagrant-berkshelf'
+vagrant_plugin 'vagrant-aws'
+vagrant_plugin 'vagrant-digitalocean'

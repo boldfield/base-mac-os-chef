@@ -6,7 +6,7 @@ maintainer_email 'brian@oldfield.io'
 license          'apache2'
 description      'Installs/Configures base-mac-os'
 long_description 'Installs/Configures base-mac-os'
-version          '0.0.21'
+version          '0.0.24'
 
 depends          'bash-it-more'
 depends          'dotfiles'
@@ -42,5 +42,8 @@ depends          'spotify', '~> 1.0'
 #depends          'x2go-client', '~> 1.0'
 #depends          'airmail', '~> 0.1'
 #depends          'paw', '~> 0.1'
+
+depends 'vagrant', '~> 0.5.0'
+depends 'virtualbox', '~> 1.0.3'
 
 supports         'mac_os_x'
