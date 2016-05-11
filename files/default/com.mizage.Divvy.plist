@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>globalHotkey</key>
+	<dict>
+		<key>keyCode</key>
+		<integer>2</integer>
+		<key>modifiers</key>
+		<integer>768</integer>
+	</dict>
+	<key>shortcuts</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUIXV5UJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLR
+	BgdUcm9vdIABrgkKFCssMzw9RkdPUFhZVSRudWxs0gsMDQ5WJGNsYXNzWk5TLm9iamVj
+	dHOADaUPEBESE4ACgAWAB4AJgAvdFRYXGBkaGxwdHh8gCyEiIyQlIiYnKCQhJipfEBJz
+	ZWxlY3Rpb25FbmRDb2x1bW5fEBFzZWxlY3Rpb25TdGFydFJvd1xrZXlDb21ib0NvZGVX
+	ZW5hYmxlZF1rZXlDb21ib0ZsYWdzXxAUc2VsZWN0aW9uU3RhcnRDb2x1bW5bc2l6ZUNv
+	bHVtbnNac3ViZGl2aWRlZFduYW1lS2V5Vmdsb2JhbF8QD3NlbGVjdGlvbkVuZFJvd1hz
+	aXplUm93cxAFEAAQLgkSAAYAABAGCIADCYAEWG1heGltaXpl0i0uLzJYJGNsYXNzZXNa
+	JGNsYXNzbmFtZaIwMVhTaG9ydGN1dFhOU09iamVjdFhTaG9ydGN1dN0VFhcYGRobHB0e
+	HyALNCI1JDciJic5JCEmKhACEHsJEgCUAAAIgAYJgARUbGVmdN0VFhcYGRobHB0eHyAL
+	ISI+JEBBJidDJCEmKhB8CRIAlAAAEAMIgAgJgARVcmlnaHTdFRYXGBkaGxwdHh8gCyEi
+	SCRKIiYnTCQ0JioQfgkSAJQAAAiACgmABFN0b3DdFRYXGBkaGxwdHh8gCyFBUSRTIiYn
+	VSQhJioQfQkSAJQAAAiADAmABFZib3R0b23SLS5aW6NbXDFeTlNNdXRhYmxlQXJyYXlX
+	TlNBcnJheRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEsA
+	UQBWAF0AaABqAHAAcgB0AHYAeAB6AJUAqgC+AMsA0wDhAPgBBAEPARcBHgEwATkBOwE9
+	AT8BQAFFAUcBSAFKAUsBTQFWAVsBZAFvAXIBewGEAY0BqAGqAawBrQGyAbMBtQG2AbgB
+	vQHYAdoB2wHgAeIB4wHlAeYB6AHuAgkCCwIMAhECEgIUAhUCFwIbAjYCOAI5Aj4CPwJB
+	AkICRAJLAlACVAJjAmsCcAAAAAAAAAIBAAAAAAAAAF8AAAAAAAAAAAAAAAAAAAKC
+	</data>
+	<key>useGlobalHotkey</key>
+	<true/>
+	<key>useMonitorCycling</key>
+	<true/>
+</dict>
+</plist>
