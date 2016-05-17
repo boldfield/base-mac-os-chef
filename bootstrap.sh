@@ -41,11 +41,11 @@ curl -L https://www.chef.io/chef/install.sh | bash -s -- -P chefdk || failure
 
 status "Configuring the initial Chef run"
 mkdir /etc/chef
-cp ${CHEF_VALIDATOR} > ${TMP_DIR}/validation.pem
+cp ${CHEF_VALIDATOR} ${TMP_DIR}/validation.pem
 echo "chef_server_url 'https://api.chef.io/organizations/${CHEF_ORG}'" > ${TMP_DIR}/client.rb
 echo "validation_client_name '${CHEF_ORG}-validator'" >> ${TMP_DIR}/client.rb
-echo "client_key '${TMP_DIR}/validation.pem'" >> ${TMP_DIR}/client.rb
-echo '{"run_list": ["role[${CHEF_ROLE}]"]}' > ${TMP_DIR}/dna.json
+echo "validation_key '${TMP_DIR}/validation.pem'" >> ${TMP_DIR}/client.rb
+echo "{\"run_list\": [\"role[${CHEF_ROLE}]\"]}" > ${TMP_DIR}/dna.json
 
 status "Running Chef"
 chef-client -c ${TMP_DIR}/client.rb -j ${TMP_DIR}/dna.json || failure

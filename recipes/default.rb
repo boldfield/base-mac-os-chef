@@ -88,6 +88,7 @@ include_recipe 'chef-client'
 include_recipe 'chef-client::config'
 include_recipe 'chef-client::delete_validation'
 include_recipe 'homebrew'
+include_recipe 'privacy_services_manager'
 
 #################
 # Homebrew Apps #
