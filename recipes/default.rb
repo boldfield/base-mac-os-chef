@@ -17,6 +17,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+def enable!(app, path)
+  # TODO: This should eventually take the form of applescript and
+  # login_item resources in the mac_os_x cookbook.
+  cmd = "osascript -e 'tell application \"System Events\" to make " \
+        'new login item at end with properties ' \
+        "{name: \"#{app}\", path: \"#{path}\", hidden: false}'"
+  enabled_status = enabled?(app)
+  execute "enable #{app}" do
+    command cmd
+    action :run
+    only_if { !enabled_status }
+  end
+end
+
+def enabled?(app)
+  cmd = "osascript -e 'tell application \"System Events\" to get " \
+        "the name of the login item \"#{app}\"'"
+  !Mixlib::ShellOut.new(cmd).run_command.stdout.empty?
+end
 
 gem_file = 'accessibility_core-0.6.3.gem'
 remote_path = 'https://github.com/RoboticCheese/accessibility_core/releases/' \
@@ -168,6 +187,7 @@ include_recipe 'chrome'
 include_recipe 'dropbox'
 include_recipe 'gimp'
 include_recipe 'iterm2'
+enable!('iTerm', '/Applications/iTerm.app')
 include_recipe 'spotify'
 
 ##############
