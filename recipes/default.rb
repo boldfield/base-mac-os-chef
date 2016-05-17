@@ -54,6 +54,33 @@ end
   end
 end
 
+mac_os_x_userdefaults 'com.apple.dock orientation' do
+  domain 'com.apple.dock'
+  key 'orientation'
+  type 'string'
+  value 'left'
+  user Etc.getlogin
+  notifies :run, 'execute[killall Dock]'
+end
+
+mac_os_x_userdefaults 'com.apple.dock largesize' do
+  domain 'com.apple.dock'
+  key 'largesize'
+  type 'int'
+  value 85
+  user Etc.getlogin
+  notifies :run, 'execute[killall Dock]'
+end
+
+mac_os_x_userdefaults 'com.apple.dock tilesize' do
+  domain 'com.apple.dock'
+  key 'tilesize'
+  type 'int'
+  value 35
+  user Etc.getlogin
+  notifies :run, 'execute[killall Dock]'
+end
+
 include_recipe 'mac_os_x::screensaver'
 
 mac_os_x_userdefaults 'com.apple.dock bl-hot-corner' do
