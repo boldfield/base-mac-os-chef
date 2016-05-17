@@ -156,6 +156,7 @@ homebrew_package 'ruby'
 homebrew_package 'tree'
 homebrew_package 'tig'
 homebrew_package 'todo-txt'
+homebrew_package 'htop'
 
 include_recipe 'python::pip'
 python_pip 'virtualenv' do
