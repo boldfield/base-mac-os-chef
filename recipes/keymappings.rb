@@ -36,7 +36,7 @@ def enable!(app, path)
         'new login item at end with properties ' \
         "{name: \"#{app}\", path: \"#{path}\", hidden: false}'"
   enabled_status = enabled?(app)
-  execute 'enable alfred' do
+  execute "enable #{app}" do
     command cmd
     action :run
     only_if { !enabled_status }
