@@ -158,6 +158,12 @@ homebrew_package 'tig'
 homebrew_package 'todo-txt'
 homebrew_package 'htop'
 
+# IRC
+homebrew_package 'libffi'
+homebrew_package 'glib'
+homebrew_package 'irssi'
+
+
 include_recipe 'python::pip'
 python_pip 'virtualenv' do
   version '15.0.1'

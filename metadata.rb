@@ -6,7 +6,7 @@ maintainer_email 'brian@oldfield.io'
 license          'apache2'
 description      'Installs/Configures base-mac-os'
 long_description 'Installs/Configures base-mac-os'
-version          '0.0.29'
+version          '0.0.30'
 
 depends          'bash-it-more'
 depends          'dotfiles'
