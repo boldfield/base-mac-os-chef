@@ -157,6 +157,7 @@ homebrew_package 'tree'
 homebrew_package 'tig'
 homebrew_package 'todo-txt'
 homebrew_package 'htop'
+homebrew_package 'mosh'
 
 # IRC
 homebrew_package 'libffi'
