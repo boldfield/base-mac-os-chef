@@ -136,6 +136,14 @@ include_recipe 'chef-client::delete_validation'
 include_recipe 'homebrew'
 include_recipe 'privacy_services_manager'
 
+mac_app_store = Chef::EncryptedDataBagItem.load("credentials", "app_store")
+mac_app_store_mas 'default' do
+  source :direct
+  username mac_app_store['username']
+  password mac_app_store['password']
+  action %i(install sign_in)
+end
+
 #################
 # Homebrew Apps #
 #################
@@ -178,15 +186,18 @@ end
 ##################
 # App Store Apps #
 ##################
-include_recipe 'app-store-alfred'
-include_recipe 'mac-app-store'
+mac_app_store_app 'Alfred'
+mac_app_store_app 'Divvy - Window Manager'
+mac_app_store_app 'Kindle'
 include_recipe 'knock'
+#include_recipe 'app-store-alfred'
+#include_recipe 'mac-app-store'
 #include_recipe 'iwork'
-include_recipe 'divvy'
+#include_recipe 'divvy'
 #include_recipe 'fantastical'
-include_recipe 'kindle'
 #include_recipe 'airmail'
 #include_recipe 'paw'
+#include_recipe 'kindle'
 
 ##############
 # Other Apps #
