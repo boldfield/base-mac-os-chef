@@ -189,6 +189,7 @@ end
 mac_app_store_app 'Alfred'
 mac_app_store_app 'Divvy - Window Manager'
 mac_app_store_app 'Kindle'
+mac_app_store_app 'LastPass: Password Manager and Secure Digital Vault'
 include_recipe 'knock'
 #include_recipe 'app-store-alfred'
 #include_recipe 'mac-app-store'
