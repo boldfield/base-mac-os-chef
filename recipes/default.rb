@@ -149,6 +149,8 @@ end
 #################
 homebrew_package 'ack'
 homebrew_package 'autoconf'
+homebrew_package 'automake'
+homebrew_package 'aspell'
 homebrew_package 'lastpass-cli'
 homebrew_package 'pass'
 homebrew_package 'pkg-config'
