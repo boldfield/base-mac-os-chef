@@ -169,6 +169,7 @@ homebrew_package 'todo-txt'
 homebrew_package 'htop'
 homebrew_package 'mosh'
 homebrew_package 'nmap'
+homebrew_package 'grip'
 
 # IRC
 homebrew_package 'libffi'
