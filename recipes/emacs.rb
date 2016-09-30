@@ -30,7 +30,6 @@ bash "Decompress Spacemacs" do
     [ -d .emacs.d ] && mv .emacs.d .emacs.d.$(date +'%s').bak
     unzip .emacs.d.zip
     mv spacemacs-master .emacs.d
-    chown -R #{Etc.getlogin} .emacs.d
   EOF
   action :nothing
 end
