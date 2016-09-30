@@ -58,12 +58,16 @@ def authorize_app!(app, path)
   end
 end
 
-homebrew_cask KARABINER_APP.downcase
+homebrew_cask KARABINER_APP.downcase do
+  options '--caskroom=/opt/homebrew-cask/Caskroom'
+end
 enable!(KARABINER_APP, KARABINER_PATH)
 authorize_app!(KARABINER_APP, KARABINER_PATH)
 authorize_app!(KARABINER_AXNOTIFIER_APP, KARABINER_AXNOTIFIER_PATH)
 
-homebrew_cask SEIL_APP.downcase
+homebrew_cask SEIL_APP.downcase do
+  options '--caskroom=/opt/homebrew-cask/Caskroom'
+end
 enable!(SEIL_APP, SEIL_PATH)
 authorize_app!(SEIL_APP, SEIL_PATH)
 

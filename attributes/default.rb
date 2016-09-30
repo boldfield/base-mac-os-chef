@@ -18,3 +18,4 @@
 # limitations under the License.
 #
 default['virtualbox']['url'] = 'http://download.virtualbox.org/virtualbox/5.0.20/VirtualBox-5.0.20-106931-OSX.dmg'
+default['spacemacs']['download_url'] = 'https://codeload.github.com/boldfield/spacemacs/zip/master'
